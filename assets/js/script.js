@@ -79,6 +79,7 @@ function inserirElementoNaDivResposta(elemento) {
 
 function validaEResponde(inputAlturaImcValue, inputPesoImcValue) {
   if (Number.isNaN(inputAlturaImcValue) && Number.isNaN(inputPesoImcValue)) {
+    limparCssLinhasTabela();
     const paragrafo = criaElemento("p");
     escreverNoElemento(
       paragrafo,
@@ -86,14 +87,17 @@ function validaEResponde(inputAlturaImcValue, inputPesoImcValue) {
     );
     inserirElementoNaDivResposta(paragrafo);
   } else if (Number.isNaN(inputAlturaImcValue)) {
+    limparCssLinhasTabela();
     const paragrafo = criaElemento("p");
     escreverNoElemento(paragrafo, `O valor da altura está inválido!.`);
     inserirElementoNaDivResposta(paragrafo);
   } else if (Number.isNaN(inputPesoImcValue)) {
+    limparCssLinhasTabela();
     const paragrafo = criaElemento("p");
     escreverNoElemento(paragrafo, `O valor do peso está inválido!.`);
     inserirElementoNaDivResposta(paragrafo);
   } else {
+    limparCssLinhasTabela();
     const resultadoImc = calculaImc(inputAlturaImcValue, inputPesoImcValue);
     const paragrafo = criaElemento("p");
     const nivelDeImc = selecionaNivelImc(resultadoImc);

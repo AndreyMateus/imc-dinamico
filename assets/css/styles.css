@@ -108,6 +108,10 @@ input:focus {
     text-shadow: 0 0 5px #fff;
 }
 
+table tr {
+    transition: all 300ms ease-in-out;
+}
+
 .nivelIMC {
     background-color: rgba(243, 86, 8, 0.915);
 }
