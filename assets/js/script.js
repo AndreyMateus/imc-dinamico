@@ -67,13 +67,14 @@ function criaElemento(elemento) {
 }
 
 function escreverNoElemento(elemento, texto) {
-  const divResposta = document.querySelector(".resultado-imc");
+  const divResposta = document.querySelector("#resultado-imc");
   divResposta.innerHTML = "";
   elemento.innerHTML = texto;
 }
 
 function inserirElementoNaDivResposta(elemento) {
-  const divResposta = document.querySelector(".resultado-imc");
+  const divResposta = document.querySelector("#resultado-imc");
+  divResposta.classList.add("resultado-imc");
   divResposta.appendChild(elemento);
 }
 
