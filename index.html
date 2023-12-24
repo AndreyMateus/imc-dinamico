@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora IMC - Dinâmica</title>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+
+    <body>
+        <main>
+            <section class="section-calculate-imc">
+                <h1>Calculadora de IMC</h1>
+                <div class="responsive-table">
+                    <table>
+                        <caption>Tabela do IMC</caption>
+                        <thead>
+                            <tr>
+                                <th>IMC</th>
+                                <th>NÍVEL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="abaixo-do-peso">
+                                <td>Menos do que 18,5</td>
+                                <td>Abaixo do peso</td>
+                            </tr>
+                            <tr id="peso-normal">
+                                <td>Entre 18,5 e 24,9</td>
+                                <td>Peso Normal</td>
+                            </tr>
+                            <tr id="sobrepeso">
+                                <td>Entre 25 e 29,9</td>
+                                <td>Sobrepeso</td>
+                            </tr>
+                            <tr id="obesidade-1">
+                                <td>Entre 30 e 34,9</td>
+                                <td>Obesidade Grau 1</td>
+                            </tr>
+                            <tr id="obesidade-2">
+                                <td>Entre 35 e 39,9</td>
+                                <td>Obesidade Grau 2</td>
+                            </tr>
+                            <tr id="obesidade-3">
+                                <td>Mais do que 40</td>
+                                <td>Obesidade Grau 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <form action="/" method="GET" id="form-imc">
+                    <fieldset>
+                        <label for="altura">Altura(Em Metros)</label>
+                        <input type="text" id="altura-imc" name="altura" placeholder="Ex: 1.70">
+                        <label for="peso">Peso(Em Kilos)</label>
+                        <input type="text" id="peso-imc" name="peso" placeholder="Ex: 95.50">
+                    </fieldset>
+                    <button type="submit" class="button-form-imc">Calcular</button>
+                </form>
+                <div class="resultado-imc" id="resultado-imc"></div>
+            </section>
+        </main>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
