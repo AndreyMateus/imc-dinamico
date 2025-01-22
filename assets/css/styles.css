@@ -57,6 +57,7 @@ fieldset {
 }
 
 .responsive-table {
+    margin: 0 auto;
     overflow-x: auto;
     max-width: 982px;
     display: flex;
